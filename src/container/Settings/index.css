@@ -1,0 +1,210 @@
+.setting {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1200px;
+    /* height: auto; */
+    top: 155px;
+    background: #FFFFFF;
+    /* border: 1px solid #000000; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 41px; */
+}
+
+.setting-title {
+    padding: 0 !important;
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 68px;
+    /* identical to box height */
+
+    letter-spacing: -0.333333px;
+
+    color: #30A12E;
+}
+
+.set_input {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: rgb(21, 201, 21);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 20px;
+    /* identical to box height */
+
+    letter-spacing: -0.333333px;
+}
+
+.set_input>input {
+    /* width: 100%; */
+    border-radius: 10px;
+    border: 1px solid rgb(160, 159, 159);
+    height: 40px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+.set_images {
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.set_images>div {
+    display: flex;
+    align-items: center;
+}
+
+.set_images>div>img {
+    margin-left: 5px;
+    height: 40px;
+}
+
+.set_images input {
+    height: 100%;
+}
+
+.set_images p {
+    border: 1px solid green;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.setting-button {
+    width: 185px;
+    height: 54px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    background: linear-gradient(180deg, #05F41D 0%, rgba(6, 89, 15, 0.67) 100%);
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    left: 70px;
+}
+
+.settings_1,
+.settings_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.settings_1 {
+    margin-right: 10px;
+}
+
+.settings>div:nth-child(1) img {
+    width: 20px;
+}
+
+.settings>div:nth-child(2) img {
+    width: 20px;
+}
+
+.set_images img {
+    width: 150px;
+    border: 1px solid rgb(160, 159, 159);
+    border-radius: 3px;
+}
+
+@media screen and (max-width:900px) {
+    .settings {
+        top: 45px;
+        left: 50px;
+    }
+
+    .settings>div:nth-child(1) img {
+        width: 15px;
+    }
+
+    .settings>div:nth-child(2) img {
+        width: 15px;
+    }
+
+    .settings>div:nth-child(1) span {
+        font-size: .7em;
+    }
+
+    .settings>div:nth-child(2) span {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .settings {
+        top: 10px;
+        left: 10px;
+    }
+
+    .settings>div:nth-child(1) img {
+        width: 15px;
+    }
+
+    .settings>div:nth-child(2) img {
+        width: 15px;
+    }
+
+    .settings>div:nth-child(1) span {
+        font-size: .7em;
+    }
+
+    .settings>div:nth-child(2) span {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .set_images {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .setting-button {
+        width: 110px;
+        height: 30px;
+        font-size: .8em;
+        padding: 2px 5px !important;
+    }
+    .set_input span{
+        font-size: .8em;
+    }
+    
+    .set_input>input {
+        height: 40px;
+        width: 100%;
+        font-size: 1em;
+        margin-top: 5px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+    .setting-title{
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+}

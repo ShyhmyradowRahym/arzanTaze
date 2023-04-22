@@ -1,0 +1,37 @@
+import { lazy, Suspense } from 'react';
+import Loader from '../component/Loader';
+import "lightgallery.js/dist/css/lightgallery.css";
+export const withLazyComponent = (LazyComponent, SuspenseComponent) => props => (<Suspense fallback={SuspenseComponent}><LazyComponent {...props} /></Suspense>);
+
+export const Home = withLazyComponent(lazy(() => import('./Home')), <Loader />);
+export const RecommendedDiscounts = withLazyComponent(lazy(() => import('./RecommendedDiscounts')), <Loader />);
+export const UserDiscounts = withLazyComponent(lazy(() => import('./UserDiscounts')), <Loader />);
+export const Recommended = withLazyComponent(lazy(() => import('./Recommended')), <Loader />);
+export const Privacy = withLazyComponent(lazy(() => import('./Privacy')), <Loader />);
+export const AboutUs = withLazyComponent(lazy(() => import('./AboutUs')), <Loader />);
+export const TopUsers = withLazyComponent(lazy(() => import('./TopUsers')), <Loader />);
+export const Discounts = withLazyComponent(lazy(() => import('./Discounts')), <Loader />);
+export const ContactUs = withLazyComponent(lazy(() => import('./ContactUs')), <Loader />);
+export const TermsOfUse = withLazyComponent(lazy(() => import('./TermsOfUse')), <Loader />);
+export const Discount = withLazyComponent(lazy(() => import('./Discount')), <Loader />);
+export const AddPost = withLazyComponent(lazy(() => import('./AddPost')), <Loader />);
+export const Product = withLazyComponent(lazy(() => import('./Product')), <Loader />);
+export const Settings = withLazyComponent(lazy(() => import('./Settings')), <Loader />);
+export const Hashtags = withLazyComponent(lazy(() => import('./Hashtags')), <Loader />);
+export const Profile = withLazyComponent(lazy(() => import('./Profile')), <Loader />);
+export const FAQ = withLazyComponent(lazy(() => import('./FAQ')), <Loader />);
+export const Notifications = withLazyComponent(lazy(() => import('./Notifications')), <Loader />);
+export const Gallery = withLazyComponent(lazy(() => import('./Gallery')), <Loader />);
+export const OfficialAcc = withLazyComponent(lazy(() => import('./OfficialAcc')), <Loader />);
+export const Notification = withLazyComponent(lazy(() => import('./Notification')), <Loader />);
+export const ProfileOfficial = withLazyComponent(lazy(() => import('./ProfileOficial')), <Loader />);
+export const Comments = withLazyComponent(lazy(() => import('./Comments')), <Loader />);
+export const SystemBallow = withLazyComponent(lazy(() => import('./SystemBallow')), <Loader />);
+export const StatusAccaunts = withLazyComponent(lazy(() => import('./StatusAccaunts')), <Loader />);
+export const OfficialAccauntAction = withLazyComponent(lazy(() => import('./OfficialAccountAction')), <Loader />);
+export const BuyingBall = withLazyComponent(lazy(() => import('./BuyingBall')), <Loader />);
+export const SendingPoints = withLazyComponent(lazy(() => import('./SendingPoints')), <Loader />);
+export const AskPoints = withLazyComponent(lazy(() => import('./AskPoints')), <Loader />);
+export const NewsletterUser = withLazyComponent(lazy(() => import('./NewsletterUser')), <Loader />);
+export const Wishlist = withLazyComponent(lazy(() => import('./Wishlist')), <Loader />);
+

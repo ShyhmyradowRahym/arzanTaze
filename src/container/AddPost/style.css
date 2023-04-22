@@ -1,0 +1,155 @@
+.ap_div {
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px 40px;
+}
+
+.ap_div>h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.ap_label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.ap_input {
+    width: 100%;
+    /* margin-top: 10px; */
+    /* padding: 0 !important; */
+    padding: 3px 10px !important;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgba(1, 1, 1, 0.2);
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    accent-color: green;
+}
+
+.ap_check_box {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+.ap_a {
+    width: 20px;
+}
+
+.ap_b {
+    width: 250px;
+    margin-left: 19px;
+    text-align: start;
+}
+
+.ap_c {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ap_c input {
+    width: 90%;
+}
+
+.ap_d {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ap_d input {
+    width: 100%;
+}
+
+.ap_mini_input {
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(1, 1, 1, 0.2);
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.ap_btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ap_btn_style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+.upload-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.upload-images img {
+    width: 100%;
+    height: 80px;
+}
+
+@media screen and (max-width: 1300px) {
+    .ap_div {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ap_div {
+        width: 400px;
+    }
+
+    .ap_check_box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .ap_div {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .ap_div {
+        padding: 0;
+    }
+
+    .ap_b {
+        width: 250px;
+        margin-left: 10px;
+    }
+
+    .ap_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

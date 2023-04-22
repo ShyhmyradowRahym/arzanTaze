@@ -1,0 +1,221 @@
+.ballow {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    border: 1px solid #27B936;
+    border-radius: 10px;
+    padding: 5px 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.offaccaction-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.ballow img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.ballow span {
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.offaccaction-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.offaccaction-title img {
+    width: 20px;
+}
+
+.offaccaction-title span {
+    font-size: 1em;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.user-input-wrp {
+    position: relative;
+    width: 50%;
+    margin: 30px 0;
+}
+
+.user-input-wrp .inputText {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    height: 40px;
+    border: 1px solid #292929;
+    box-shadow: none !important;
+    border-radius: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.user-textarea-wrp {
+    position: relative;
+    width: 50%;
+    margin: 30px 0;
+}
+
+.user-textarea-wrp .inputText {
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    height: 100px;
+    border: 1px solid #292929;
+    box-shadow: none !important;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.user-input-wrp .floating-label {
+    font-size: .9em;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 30px;
+    transition: 0.2s ease all;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+.user-textarea-wrp .floating-label {
+    font-size: .9em;
+    position: absolute;
+    pointer-events: none;
+    top: 3%;
+    transform: translate(0, -3%);
+    left: 30px;
+    transition: 0.2s ease all;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px 5px;
+}
+
+.user-input-wrp input:focus~.floating-label,
+.user-input-wrp input:not(:focus):valid~.floating-label {
+    top: 0px;
+    left: 30px;
+    opacity: 1;
+}
+.user-textarea-wrp textarea:focus~.floating-label,
+.user-textarea-wrp textarea:not(:focus):valid~.floating-label {
+    top: -12px;
+    left: 30px;
+    opacity: 1;
+}
+
+@media screen and (max-width:900px) {
+    .user-input-wrp {
+        position: relative;
+        width: 60%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .user-input-wrp input:focus~.floating-label,
+.user-input-wrp input:not(:focus):valid~.floating-label {
+    top: 0px;
+    left: 10px;
+    opacity: 1;
+}
+
+    .user-input-wrp .floating-label {
+        left: 10px;
+    }
+    .user-textarea-wrp .floating-label {
+        left: 10px;
+    }
+    .user-textarea-wrp .inputText {
+        padding: 3px 10px;
+    }
+    .ballow {
+        display: flex;
+        align-items: center;
+        width: 400px;
+    }
+    .user-input-wrp .inputText {
+        height: 30px;
+    }
+    .user-textarea-wrp .inputText {
+        height: 50px;
+    }
+
+    .offaccaction-body {
+        width: 420px !important;
+    }
+
+    .ballow span {
+        font-weight: 600;
+        font-size: .8em;
+    }
+    .user-input-wrp {
+        position: relative;
+        width: 70%;
+        margin: 15px 0;
+    }
+    .user-textarea-wrp {
+        position: relative;
+        width: 70%;
+        margin: 15px 0;
+    }
+    .user-input-wrp .floating-label {
+        font-size: .7em;
+        border-radius: 8px;
+        padding: 2px 5px;
+    }
+    .user-textarea-wrp .floating-label {
+        font-size: .7em;
+        border-radius: 8px;
+        padding: 2px 5px;
+    }
+    .user-textarea-wrp textarea:focus~.floating-label,
+.user-textarea-wrp textarea:not(:focus):valid~.floating-label {
+    top: -10px;
+    left: 10px;
+    opacity: 1;
+}
+}
+
+@media screen and (max-width:360px) {
+    .ballow {
+        display: flex;
+        align-items: center;
+        width: 250px;
+    }
+
+    .offaccaction-body {
+        width: 270px !important;
+    }
+    .user-input-wrp {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .user-textarea-wrp {
+        margin: 15px 0;
+        width: 100%;
+    }
+    .user-input-wrp .inputText,.user-textarea-wrp .inputText {
+        border-radius: 4px;
+    }
+}

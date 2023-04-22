@@ -1,0 +1,99 @@
+#myVideo {
+    width: 100%;
+    border-radius: 10px;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 99%;
+    display: none;
+    border-radius: 10px;
+}
+
+.content1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#myVideo:hover~.content {
+    display: block;
+    transition: 1s;
+}
+
+.content:hover {
+    display: block;
+    transition: 1s;
+}
+
+#myBtn {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#myBtn .play {
+    width: 20px;
+}
+
+#myBtn .pause {
+    width: 25px;
+}
+
+#myBtn span {
+    font-size: 1.1em;
+    color: white;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.content1-footer {
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 20px;
+}
+
+.content1-footer div {
+    display: flex;
+    align-items: center;
+}
+
+.content1-footer div img {
+    width: 20px;
+}
+
+.content1-footer div span {
+    font-size: .8em;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+@media screen and (max-width:600px) {
+    #myVideo {
+        height: 30vh;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .content {
+        height: 98%;
+    }
+
+}

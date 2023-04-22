@@ -1,0 +1,35 @@
+const Constant = {
+    _home: "/",
+    _discounts: "/d-items/",
+    _recommendedDiscounts: "/r-items/",
+    _userDiscounts: '/user-discounts/',
+    _topUsers: "/top-users/",
+    _aboutUs: "/about-us/",
+    _contactUs: "/contact-us/",
+    _privacy: "/privacy/",
+    _termsOfUse: "/terms-of-use/",
+    _addPost: "/add-post",
+    _product: "/product",
+    _settings: "/settings",
+    _hashtags: '/hashtags/',
+    _profile: '/profile',
+    _profileOfficial: '/profile-official',
+    _faq: '/faq',
+    _wishlist: '/wishlist',
+    _notifications: '/notifications',
+    _gallery: '/gallery',
+    _offacc: '/official-accaunts',
+    _notification: '/notification/',
+    _comments: '/comments',
+    _systemBallow: '/system-ballow',
+    _offStatus: '/status-accaunts',
+    _OffAccAction: '/accaunt-actions',
+    _BuyingBall: '/buying-ball',
+    _SendingPoints: '/sending-points',
+    _AskPoints: '/ask-points',
+    _NewsletterUser: '/newsletter-user',
+
+    encapsulation: "???ENCDENCSENCASENC!!!###$$$"
+}
+
+export default Constant

@@ -1,0 +1,64 @@
+.d-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-links {
+    max-width: 767px;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.header-links>a {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    background: #D9D9D9;
+    color: #3BC624;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.header-links>a:first-child {
+    border-radius: 13px 0px 0px 13px;
+}
+
+.header-links>a:last-child {
+    border-radius: 0 13px 13px 0;
+}
+
+.header-links>a.active {
+    background-image: linear-gradient(183.3deg, #1D823B 2.72%, #2D8346 2.73%, #03C93E 70.47%);
+    
+    color: #fff;
+}
+
+.justify-content>p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.justify-content>p>span {
+    color: #3BC624;
+}
+
+.recommended-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+@media screen and (max-width: 360px) {
+
+    .header-links {
+        max-width: 100%;
+        margin: 2rem auto;
+        display: flex;
+    }
+
+    .header-links>a {
+        line-height: 50px;
+        font-size: 1em
+    }
+}

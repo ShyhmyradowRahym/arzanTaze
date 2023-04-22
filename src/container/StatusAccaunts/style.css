@@ -1,0 +1,178 @@
+.ballow {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: auto !important;
+    margin: 0 auto;
+    border: 1px solid #27B936;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ballow img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.ballow span {
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.tooltip {
+    position: absolute;
+    top: -18px;
+    background-color: white;
+    font-size: .7em !important;
+    padding: 1px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #25BB4F 0%, #1E923F 100%);
+    color: white;
+    border-radius: 20px;
+    font-size: 1.1em;
+    margin: 10px 0;
+    margin-bottom: 25px;
+    width: 200px;
+}
+
+.expiration-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 520px;
+    height: auto !important;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.expiration-date1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto !important;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 5px 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.ver_line {
+    width: 50px;
+    margin: 0 5px;
+    border-top: 1px solid black;
+}
+
+.ballow1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 30px; */
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.right_chron {
+    position: absolute;
+    right: 10px;
+    width: 20px !important;
+    height: 10px !important;
+}
+
+@media screen and (max-width:600px) {
+    .ballow {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .expiration-date {
+        border-radius: 5px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .expiration-date1 {
+        margin: 10px auto;
+        margin-bottom: 0px;
+    }
+
+    .ballow span {
+        font-weight: 600;
+        font-size: .8em;
+    }
+
+
+    .button {
+        border: none;
+        padding: 5px 10px;
+        background: linear-gradient(180deg, #25BB4F 0%, #1E923F 100%);
+        color: white;
+        border-radius: 5px;
+        font-size: .9em;
+        margin: 0;
+        margin-bottom: 15px;
+        width: 120px;
+    }
+
+    .ver_line {
+        width: 50px;
+        border-top: 1px solid black;
+    }
+
+    .ballow1 {
+        border-radius: 5px;
+        height: 20px;
+    }
+
+    .right_chron {
+        position: absolute;
+        right: 10px;
+        width: 13px !important;
+        height: 6px !important;
+    }
+
+    .tooltip {
+        font-size: .5em !important;
+        top: -12px;
+        padding: 1px 10px;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .button {
+        border: none;
+        padding: 5px 10px;
+        background: linear-gradient(180deg, #25BB4F 0%, #1E923F 100%);
+        color: white;
+        border-radius: 5px;
+        font-size: .9em;
+        margin: 0;
+        margin-bottom: 15px;
+        width: 120px;
+    }
+
+    .ballow1 span {
+        font-size: .9em;
+    }
+}
